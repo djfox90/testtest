@@ -132,15 +132,7 @@ void queueC::displayStats(float lambda){
     cout <<"The service time is " << service << endl;
     float serviceExit = avgSer;
     float clock = .0;
-    float value = 0;
-    float sTime = 0;
-    float avgRate = 1 / lambda;
-    float arrival =0.0;
-    value = (float)rand() / (float)RAND_MAX;
-    sTime = -(avgRate)*(log(value));
-    arrival = sTime + arrival;
-    queueClass.enqueue(arrival);
-
+    float va
     for(int i = 1; i < 10000; i++){
 
         value = (float)rand() / (float)RAND_MAX;
